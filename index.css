@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+}
+body {
+	background: #46c626;
+}
+.item-1 {
+	background:-webkit-linear-gradient(left top, #46c626, #87e171);
+}
+.item-2 {
+	background:-webkit-linear-gradient(left top, #303030, #494949);
+}
+.item-3 {
+	background:-webkit-linear-gradient(left top, #ecc13e, #e6ce6b);
+}
+.item-4 {
+	background: -webkit-linear-gradient(left top, #f9804b, #f0c079);
+}
+.item-5 {
+	background:-webkit-linear-gradient(left top, #cc54bf, #d182d7);
+}
+.item-6 {
+	background: -webkit-linear-gradient(left top, #7654cc, #a18fe2);
+}
+.item-7 {
+	background: -webkit-linear-gradient(left top, #179bdf, #6bb7ea);
+}
+.item-8 {
+	background: -webkit-linear-gradient(left top, #959595, #bdbdbd);
+}
+.loading .content .progress span {
+	-webkit-transition: width 0.4s linear;
+}
+.loading {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: #b9ccd5;
+	display: -webkit-box;
+	-webkit-box-align: center
+}
+.loading .content {
+	text-align: center;
+	-webkit-box-flex: 1;
+	margin: 0 80px
+}
+.loading .content .progress {
+	height: 13px;
+	padding: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff
+}
+.loading .content .progress span {
+	display: block;
+	height: 13px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #39B54A
+}
+.loading .content p {
+	line-height: 34px;
+	color: #5f696a;
+    font-family:"microsoft yahei";
+}
+.main {
+	position: absolute;
+	display: block;
+	width: 35%;
+	right: 0;
+	bottom: 10%;
+	margin-right: 10%;
+}
+.arrow {
+	position: absolute;
+	display: block;
+	width: 10%;
+	bottom: 0;
+	left: 45%;
+	animation: arrowing 1s linear 0s infinite normal;
+	-webkit-animation: arrowing 1s linear 0s infinite normal;
+	-moz-animation: arrowing 1s linear 0s infinite normal;
+}
+@-webkit-keyframes arrowing {
+	0%{opacity:0;bottom: 0%;}
+	50%{opacity:0.5;bottom: 2.5%;}
+	100%{opacity:1;bottom: 5%;}
+}
+@-moz-keyframes arrowing {
+	0%{opacity:0;bottom: 0%;}
+	50%{opacity:0.5;bottom: 2.5%;}
+	100%{opacity:1;bottom: 5%;}
+}
+@keyframes arrowing {
+	0%{opacity:0;bottom: 0%;}
+	50%{opacity:0.5;bottom: 2.5%;}
+	100%{opacity:1;bottom: 5%;}
+}
+.item {
+	position: relative;
+	display: block;
+}
+.contain {
+	display: block;
+	margin-top:35px;
+	margin-left: 10%;
+	width: 80%;
+}
+.big {
+	position: relative;
+	display: block;
+	font-size: 24px;
+	color: white;
+	opacity: 0;
+}
+.bigger {
+	position: relative;
+	display: block;
+	font-size: 32px;
+	color: white;
+	opacity: 0;
+}
+.small {
+	position: relative;
+	display: block;
+	font-size: 16px;
+	color: white;
+	opacity: 0;
+}
+#in {
+	display: inline;
+}
